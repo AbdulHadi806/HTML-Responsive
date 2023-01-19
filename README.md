@@ -2,7 +2,7 @@
 Responsive HTML used BOOTSTRAP. CONVERTED PSD TO HTML
 
 # Deskstop View
-![image](https://user-images.githubusercontent.com/113926529/213379392-0511c4d0-dd0a-4a46-8dbe-d2fff44f0432.png)
+<img width=600 src="https://user-images.githubusercontent.com/113926529/213379392-0511c4d0-dd0a-4a46-8dbe-d2fff44f0432.png" />
 
 #Mobile View
 
