@@ -1,0 +1,905 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #fff;
+    font-family: 'Outfit';
+    font-size: 16px;
+    line-height: 2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    padding: 0;
+    margin: 0;
+    color: #86a4a2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+}
+a {
+    text-decoration: none !important;
+}
+ul, li {
+    margin:0;
+    padding:0;
+    font-family: 'Outfit';
+}
+li {
+    list-style-type: none;
+}
+.container {
+    max-width: 1091px;
+    margin: 0 auto;
+}
+/*fonts*/
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Light.woff2') format('woff2'),
+        url('../fonts/Outfit-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Regular.woff2') format('woff2'),
+        url('../fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
+        url('../fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-Medium.woff2') format('woff2'),
+        url('../fonts/Outfit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
+        url('../fonts/Outfit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/Brygada1918-Medium.woff2') format('woff2'),
+        url('../fonts/Brygada1918-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/Brygada1918-Italic.woff2') format('woff2'),
+        url('../fonts/Brygada1918-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/Brygada1918-Regular.woff2') format('woff2'),
+        url('../fonts/Brygada1918-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/Brygada1918-Bold.woff2') format('woff2'),
+        url('../fonts/Brygada1918-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/Brygada1918-SemiBold.woff2') format('woff2'),
+        url('../fonts/Brygada1918-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/*---------------------------header starts here------------------------*/
+.header {
+    z-index: 9999;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: #fff !important;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Outfit';
+    color: #02284B !important;
+}
+.nav-link.dropdown-toggle {
+    position: relative;
+}
+/* .nav-link.dropdown-toggle::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    background-color: #f9bd37;
+    right: -3px;
+    bottom: 16px;
+}
+.dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 11px;
+    background-color: #f9bd37;
+    right: -7px;
+    bottom: 16px;
+    top: 17px;
+} */
+.navbar-nav {
+    padding-right: 109px;
+    gap: 46px;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    align-content: center;
+}
+.header-call-us span {
+    color: #F9B92B;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 25px;
+    padding-left: 77px;
+}
+.header-call-us a {
+    font-size: 27px;
+    font-weight: 700;
+    color: #02284B;
+    font-family: 'Brygada 1918';
+}
+/*--------------------------------------------banner starts here-------------------------*/
+.banner {
+    background-color: rgba(2, 40, 75, 0.98);
+    height: 555px;
+} 
+.banner-background {
+    bottom: 96px;
+    left: -149px;
+}
+.banner-inner {
+    z-index: 6;
+    padding-top: 72px;
+}
+.banner-inner h1 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.banner-inner h2 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    font-family: 'Brygada 1918';
+    padding-top: 15px;
+    padding-bottom: 61px;
+}
+.banner .btn.btn-primary.btn-lg {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #02284b;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    border-radius: initial;
+    transition: .2s all ease-in-out;
+}
+.banner .btn.btn-primary.btn-lg:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.banner-right-image {
+    margin-top: 50px;
+}
+.banner-right-image img {
+    width: 100%;
+}
+/*------------------------------------------schedule-row starts here-----------------------*/
+.schedule-row .arrow {
+    border: solid #f9bd37;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.schedule-row .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 155px;
+    top: 17px;
+}
+.pulse {
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+ }
+  .pulse:hover {
+    animation: none;
+ }
+ .schedule-inner {
+    padding-top: 188px;
+    padding-bottom: 67px;
+ }
+ .schedule-inner .col-sm-10 {
+    margin: 0 auto;
+ }
+ .schedule-inner p {
+    font-size: 17px;
+    color: #262626;
+    line-height: 25px;
+    font-weight: 300;
+}
+.scheule-main-p {
+    padding-bottom: 20px;
+}
+.schedule-inner span {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 46px;
+    padding-bottom: 16px;
+    display: block;
+}
+.schedule-inner .btn.btn-primary.btn-lg {
+    text-transform: uppercase;
+    width: 189px;
+    background-color: #f9b92b;
+    font-size: 20px;
+    font-weight: 300;
+    color: #02284B;
+    border: 1px solid transparent;
+    border-radius: initial;
+    transition: 0.2s all ease-in-out;
+}
+.schedule-inner .btn.btn-primary.btn-lg:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+/*-------------------------------------------cases-handle-row starts here------------------------*/  
+.cases-handle-row {
+    background-color: #f2f4f6;
+}
+.row.cases-handle-outer {
+    padding-top: 82px;
+    padding-bottom: 120px;
+}
+.cases-handle-right h2 {
+    color: #F9B92B;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 72px;
+}
+.cases-handle-right p {
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Brygada 1918';
+    padding-top: 21px;
+}
+.cases-handle-boxes {
+    margin-right: 10px;
+}
+.cases-row-box {
+    background-color: #02284b;
+    border-radius: 5px;
+    position: relative;
+}
+.cases-row-box img {
+    padding-bottom: 20px;
+    transition: .4s all ease-in-out;
+}
+.cases-row-box p {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+    transition: .4s all ease-in-out;
+}
+.cases-box-description {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    overflow: hidden;
+}
+.cases-box-overlay {
+    opacity: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -37px;
+    left: 0;
+    right: 0;
+    transition: .3s all ease-in-out;
+}
+.cases-box-overlay .btn.btn-primary.btn-lg {
+    width: 128px !important;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    border-radius: initial;
+    transition: 0.5s all ease-in;
+}
+.cases-box-overlay .btn.btn-primary.btn-lg:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.cases-box-description:hover img {
+    opacity: 0;
+}
+.cases-box-description:hover p {
+    opacity: 0;
+}
+.cases-box-description:hover .cases-box-overlay {
+    opacity: 100%;
+    bottom: 50px;
+}
+/*-------------------------------respect-case-row starts here--------------------------*/
+.respect-case-row img {
+    width: 100%;
+}
+.respect-images-main {
+    align-items: flex-end;
+    margin-top: -168px !important;
+    margin-bottom: 20px;
+}
+.respect-case-description {
+    padding-top: 108px;
+    padding-bottom: 70px;
+}
+.respect-case-description h2 {
+     color: #F9B92B;
+     font-size: 54px;
+     font-weight: 700;
+     line-height: 72px;
+     padding-bottom: 27px;
+}
+.respect-case-description p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #262626;
+}
+.testimonial-descripion-inner span {
+    display: inline !important;
+}
+.respect-case-description p:nth-child(3) {
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+.respect-case-description span {
+    font-size: 20px;
+    line-height: 27px;
+    color: #262626;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 33px;
+    padding-bottom: 16px;
+}
+.respect-contact-us {
+    text-align: center;
+    width: 187px;
+    margin: 0 auto;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    transition: 0.2s all ease-in-out;
+}
+.respect-contact-us:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.respect-contact-us a {
+    text-transform: uppercase;
+    color: #02284B;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 300;
+}
+/*-------------------------------------it-seasy-row starts here-------------------------------*/
+.its-easy-row {
+    background-color: #fff;
+}
+.its-easy-row img  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.its-easy-description {
+    background-color: #f9b92b;
+    max-width: 1135px;
+    border-top-right-radius: 500px 500px;
+    border-bottom-right-radius: 500px 500px;
+    z-index: 9;
+}
+.its-easy-row .container {
+    padding-top: 73px;
+    padding-bottom: 75px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 826px;
+}
+.its-easy-row .container p:nth-child(3) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.its-easy-row h2 {
+    font-family: 'Brygada 1918';
+    font-weight: 700;
+    font-size: 54px;
+    color: #fff;
+    line-height: 72px;
+    padding-bottom: 28px;
+    text-align: left;
+}
+.its-easy-row p {
+    color: #02284B;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+}
+/*-----------------------------------our-cases-result start here--------------------------*/
+.our-cases-row .container {
+    margin-top: -115px;
+}
+.our-cases-row {
+    background-color: #f2f4f6;
+    margin-top: -115px;
+    padding-top: 280px;
+    padding-bottom: 105px;
+    position: relative;
+}
+.our-cases-text {
+    color: #F9B92B;
+    font-size: 54px;
+    font-weight: 700;
+    padding-bottom: 38px;
+    margin: 0 auto;
+}
+.our-cases-text h2 {
+    font-size: 54px;
+    color: #F9B92B;
+    line-height: 72px;
+    font-family: 'Brygada 1918';
+    font-weight: 700;
+}
+.our-cases-text p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #262626;
+    line-height: 25px;
+    padding-top: 20px;
+}
+.our-cases-box {
+    padding-top: 41px;
+    padding-bottom: 23px;
+    max-width: 231px;
+    margin: 0 auto;
+    background-color: #02284b;
+    max-width: 351px;
+    border-radius: 5px;
+}
+.cases-box-outer {
+    margin-bottom: 3px;
+}
+.our-cases-box h3 {
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+}
+.our-cases-box .our-cases-box-span {
+    color: #F9B92B;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    max-width: 198px;
+    margin: 0 auto;
+}
+.cases-bottom {
+    margin-top: 72px;
+}
+.case-outer-span {
+    display: inline-block;
+    color: #02284B;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.cases-button {
+    text-align: center;
+    max-width: 189px;
+    margin: 0 auto;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    transition: .2s all ease-in;
+}
+.cases-button a {
+    color: #02284B;
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.cases-button:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+/*---------------------------------meet-our-attorney starts here--------------------------*/
+.meet-our-attorney .container {
+    padding-top: 117px;
+    padding-bottom: 92px;
+}
+.meet-attorney-intro h2 {
+    color: #F9B92B;
+    line-height: 72px;
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'Brygada 1918';
+    padding-bottom: 34px;
+}
+.meet-our-attorney h3 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #02284B;
+    padding-bottom: 26px;
+}
+.meet-our-attorney span {
+    color: #262626;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 72px;
+    padding-bottom: 15px;
+}
+.meet-attorney-button {
+    text-align: center;
+    max-width: 189px;
+    margin: 0 auto;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    transition: .2s all ease-in;
+}
+.meet-attorney-button a {
+    color: #02284B;
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.meet-attorney-button:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+/*--------------------------------------------testimonial-row starts here---------------*/
+.testimonials-row {
+    background-color: #f2f4f6;
+}
+.testimonials-row .container {
+    padding-top: 118px;
+    padding-bottom: 109px;
+}
+.testimonial-intro-main {
+    margin: 0 auto;
+}
+.testimonial-intro-main h2 {
+    color: #F9B92B;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 72px;
+    font-family: 'Brygada 1918';
+}
+.testimonial-intro-secondary p {
+    padding-top: 22px;
+    padding-bottom: 60px;
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.testimonials-row .testimonial-descripion::before {
+    content: '';
+    background: url('../images/testimonial-quote1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 96px;
+    width: 96px;
+    top: -43px;
+    background-size: contain;
+    left: -56px;
+}
+.testimonials-row .testimonial-descripion::after {
+    content: '';
+    background: url('../images/testimonial-quote2.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 96px;
+    width: 96px;
+    bottom: -25px;
+    right: -78px;
+}
+.testimonial-descripion-inner {
+    background-color: #f9b92b;
+    border-radius: 5px ;
+}
+.testimonial-descripion-inner p {
+    padding-left: 21px;
+    padding-right: 13px;
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-top: 28px;
+    padding-bottom: 24px;
+}
+.testimonial-descripion-inner p span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+}
+.testimonials-row .testimonials-outer-span {
+    color: #02284B;
+    display: inline-block;
+    padding-top: 46px;
+    padding-bottom: 16px;
+    line-height: 20px;
+    line-height: 27px
+}
+.testimonial-button {
+    text-align: center;
+    max-width: 189px;
+    margin: 0 auto;
+    background-color: #f9b92b;
+    border: 1px solid transparent;
+    transition: .2s all ease-in;
+}
+.testimonial-button a {
+    color: #02284B;
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.testimonial-button:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.testimonial-descripion-inner.change p {
+    padding-bottom: 38px;
+}
+/*contact baratta law*/
+.contact-baratta-law .container {
+    padding-top: 76px;
+    padding-bottom: 16px;
+}
+.contact-baratta-law img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.contact-baratta-law h2 {
+    font-size: 54px;
+    padding-bottom: 49px;
+    font-weight: 700;
+    line-height: 72px;
+    font-family: 'Brygada 1918';
+    color: #F9B92B;
+}
+.form-text-area {
+    padding-top: 68px;
+}
+.form-text-area textarea {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #707070;
+    color: #02284B;
+    transition: 0.2s all ease-in-out;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.form-button {
+    width: 190px;
+    padding-top: 40px;
+}
+.form-submit:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.form-submit {
+    background-color: #f9b92b;
+    line-height: 47px;
+    width: 100%;
+    border: 1px solid transparent;
+    color: #02284B;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s all ease-in;
+}
+textarea:focus {
+    outline: none;
+}
+input:focus
+  {
+     outline: none;
+  }
+.form-row-1 input {
+    border: 1px solid transparent;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #707070;
+    color: #02284B;
+}
+@media (max-width:767px) {
+    .header-call-us {
+        display: none;
+    }
+    .form-text-area {
+        max-width: 270px !important;
+    }
+    .meet-attorney-thumbnail img {
+        width: 100%;
+    }
+    .meet-attorney-main {
+        padding-top: 26px;
+    }
+    .banner-right-image {
+        margin-top: 28px;
+    }
+    .testimonial-intro-main h2 {
+        font-size: 45px;
+        line-height: 53px;
+    }
+    .schedule-inner {
+        padding-top: 145px;
+    }
+    .banner {
+        height: 785px !important;
+    }
+    .banner-background {
+        bottom: initial;
+    }
+    .respect-images-main {
+        margin-top: 0 !important;
+    }
+    .respect-thumbnail.change {
+        margin-bottom: 20px;
+    }
+    .cases-handle-right p {
+        padding-bottom: 27px;
+    }
+    .cases-handle-boxes {
+        margin-right: initial;
+    }
+    .its-easy-description {
+        border-top-right-radius: 500px 30px;
+        border-bottom-right-radius: 500px 30px;
+    }
+    .meet-attorney-description {
+        text-align: center;
+    }
+}
+@media ( max-width:1280px ) {
+    .nav-link {
+        font-size: 14px;
+    }
+    .banner-inner h2 {
+        padding-bottom: 20px;
+        line-height: 49px;
+    }
+    .respect-images-main {
+        margin-top: -77px !important;
+    }
+    .contact-baratta-law img {
+        display: none;
+    }
+    .form-text-area {
+        max-width: 977px;
+    }
+    .form-text-area textarea{
+        width: 100%;
+    }
+    .header-call-us {
+        display: none;
+    }
+    .header-call-us a {
+        font-size: 13px;
+    }
+    .navbar-nav {
+        gap: 22px !important;
+        padding-right: initial;
+    }
+    .its-easy-row img {
+        display: none;
+    }
+    .testimonials-row .testimonial-descripion::before {
+        content: none;
+    }
+    .testimonials-row .testimonial-descripion::after {
+        content: none;
+    }
+}
